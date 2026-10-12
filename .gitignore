@@ -9,6 +9,9 @@ node_modules/
 dist/
 build/
 coverage/
+**/fig1_*_uniform_n*.png
+**/fig2_*_cheb_n*.png
+**/fig3_*_spline_n*.png
 *.log
 .DS_Store
 Thumbs.db

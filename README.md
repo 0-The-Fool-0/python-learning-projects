@@ -6,9 +6,9 @@ A collection of independent Python exercises, kept in separate folders to preser
 
 | Directory | Overview | Main technologies |
 |---|---|---|
-| `PythonProject/` | “Dots” board game with a Tkinter UI and separated game logic. Includes a small test directory. | Python, Tkinter |
-| `PythonProject2/` | European roulette visual simulation. | Python, Pygame |
-| `PythonProject4/` | Numerical-methods exercise covering interpolation and spline calculations. | Python, NumPy; plotting/verification dependencies may be optional |
+| `PythonProject/` | 10×10 Tkinter board prototype with alternating turns and move validation. Capture detection is not implemented. | Python, Tkinter |
+| `PythonProject2/` | European roulette visual simulation. | Python, Pygame (not installed in the review environment) |
+| `PythonProject4/` | Numerical-methods exercise covering interpolation and spline calculations. | Python, NumPy; Matplotlib and SciPy imports are optional |
 | `PythonProject5/` | Bézier curve generation using the de Casteljau algorithm. | Python, NumPy, Matplotlib |
 | `PythonYandex1/` | Small introductory exercise with text input/output. | Python |
 
@@ -16,7 +16,7 @@ A collection of independent Python exercises, kept in separate folders to preser
 
 ## Getting started
 
-Each exercise has its own entry point and dependency requirements. There is no root-level installer or unified runner. Start by opening the selected folder and reading any project-specific instructions; install only that exercise's dependencies.
+Each exercise has its own entry point and dependency requirements. There is no root-level installer or unified runner. `PythonProject` uses Python and Tkinter; its logic tests run from that folder with `python -m unittest discover -s tests -t .`. For the other projects, install dependencies from the repository root with `python -m pip install -r PythonProject2/requirements.txt`, and similarly for `PythonProject4/requirements.txt` or `PythonProject5/requirements.txt`.
 
 For example, the typical entry points are:
 
@@ -27,8 +27,8 @@ python PythonProject4/mms.py
 python PythonProject5/1.py
 ```
 
-The commands above reflect file layout and have not been executed as part of this repository review.
+The roulette and Bézier commands start GUI/plot windows and were not launched in this review. The Tkinter interface is wired to the logic module; its display could not be smoke-tested in this non-interactive review session.
 
 ## Notes
 
-This is a learning archive, not a single integrated application. The individual projects and variants have not been merged or designated as canonical. Test coverage and launch requirements vary by folder and need to be checked before treating any exercise as a maintained project.
+This is a learning archive, not a single integrated application. The individual projects and variants have not been merged or designated as canonical. `PythonProject3` has no source files in this snapshot. Some exercises remain incomplete and should not be treated as maintained applications.

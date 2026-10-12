@@ -1,8 +1,6 @@
 
 import tkinter as tk
 from gui import GameWindow
-import logic
-from graphics import GameCanvas
 
 def main():
     root = tk.Tk()

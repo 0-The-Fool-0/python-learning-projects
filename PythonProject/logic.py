@@ -42,4 +42,5 @@ class GameLogic:
 
     def clear_board(self):
         self.player_points = {1: set(), 2: set()}
+        self.current_player = 1
         self.scores = {1: 0, 2: 0}
