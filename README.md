@@ -1,3 +1,5 @@
+[Русская версия](README.ru.md)
+
 # Python Learning Projects
 
 A collection of independent Python exercises, kept in separate folders to preserve their original scope and implementation choices.
