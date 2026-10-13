@@ -1,3 +1,5 @@
+[Русская версия](README.ru.md)
+
 # Dots — Tkinter coursework prototype
 
 This folder contains a small 10×10 Tkinter board prototype. Players take turns placing points by clicking an empty cell. The **New game** button clears the board and starts again with Player 1.
